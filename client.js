@@ -1,16 +1,16 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycby4uWuRTqLS3AGqp0TRnOnVeCEsxJAdL8q04my1n8avnTmpxOQwn-7NVd2RqwNBcuEN/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzYviAlxrWnOgalHi03arQOpWySRdsjI96ie3IdEvZ8G4E5PdEBvBMGkkjMz-Tgapp4Gw/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg =document.getElementById("msg");
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    form.reset()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML = "Message Save Successfully"
             setTimeout(function(){
                 msg.innerHTML =""
             },5000)
+            form.reset()
         })
         .catch(error => console.error('Error!', error.message))
 })
