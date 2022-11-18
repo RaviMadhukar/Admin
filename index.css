@@ -10,13 +10,18 @@ html{
 }
 
 body{
-    background: lightcoral;
+    background: black;
     color: #fff;
+}
+
+.logoo img{
+    width: 390px;
+    margin: 10px;
 }
 
 .sub-title{
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: underline lightblue ;
 }
@@ -93,3 +98,6 @@ body{
      color:black;
      border: 5px solid white;
 }
+
+
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Income Detail</title>
+    <title>Client Payment</title>
     <link rel = "icon" href ="image/logo10.png" type = "image/x-icon">
     <link rel="stylesheet" href="income.css">
 
@@ -12,14 +12,16 @@
 <body>
     <div id="contact">
         <div class="container">
-            <h1 class="sub-title">Payment Details</h1>
+            <h1 class="sub-title">Client Payment</h1>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet"> 
                         <input type="date" name="Date" placeholder="Enter Date" required>
-                        <input type="text" name="Work" placeholder="Work On" required>
-                        <input type="text" name="TName" placeholder="Enter Team Name" required>
-                        <input type="email" name="Email" placeholder="Enter Team Email" required>
+                        <input type="text" name="CName" placeholder="Enter Clint Name" required>
+                        <input type="email" name="Email" placeholder="Enter Clint Email" required>
+                        <input type="number" name="Phone" placeholder="Enter Clint Phone Number" required>
                         <input type="number" name="Payment" placeholder="Payment" required>
+                        <input type="text" name="Work" placeholder="Payment for work" required>
+                        <input type="text" name="Tname" placeholder="Team name who get payment" required>
                         <button type="submit" class="btn">Submit</button>
                         <span id="msg"></span>
                     </form>
@@ -28,7 +30,7 @@
     </div>
 </body>
 
-<script src="income.js"></script>
+<script src="clientpay.js"></script>
 <script src="https://kit.fontawesome.com/f4d0d0e2e3.js" crossorigin="anonymous"></script>
 
 </html>
